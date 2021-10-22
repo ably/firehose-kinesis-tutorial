@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AWS Kinesis Firehose Demo</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.ably.io/lib/ably.min-1.js"></script>
+    <script src="client.js"></script>
+  </head>
+  <body>
+    <h1>AWS Kinesis Firehose Demo</h1>
+    <div>
+      <button id="generateSensorData" onclick="generateSensorData()">
+        Generate Readings
+      </button>
+    </div>
+    <div>
+      <p id="count"></p>
+      <p id="averages"></p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+body {
+  background-color: skyblue;
+  padding-left: 10px;
+  font-size: 14pt;
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+h1 {
+  font: 20pt Verdana, Geneva, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  line-height: 20pt;
+}
