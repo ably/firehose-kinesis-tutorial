@@ -15,9 +15,9 @@ fetch("/auth")
       ).innerHTML = `<strong>Number of readings: </strong>${data.num_readings}`
       document.getElementById(
         "averages"
-      ).innerHTML = `<strong>Average Temp(°C):</strong> ${data.avg_temperature.toFixed(
+      ).innerHTML = `<strong>Average temperature (°C):</strong> ${data.avg_temperature.toFixed(
         2
-      )}<br/><strong>Average humidity(%):</strong> ${data.avg_humidity.toFixed(
+      )}<br/><strong>Average humidity (%):</strong> ${data.avg_humidity.toFixed(
         1
       )}<br/>`
     })
