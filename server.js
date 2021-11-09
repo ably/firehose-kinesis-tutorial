@@ -20,7 +20,14 @@ app.get("/", (request, response) => {
 })
 
 app.get("/auth", (request, response) => {
-  response.json({ apiKey: process.env.ABLY_API_KEY })
+  ably.auth.requestToken((err, tokenDetails) => {
+    if (err) {
+      console.error(err)
+      response.sendStatus(500)
+      return
+    }
+    response.json(tokenDetails)
+  })
 })
 
 app.get("/generate", (request, response) => {
